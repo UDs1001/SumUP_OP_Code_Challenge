@@ -1,0 +1,101 @@
+.Form-Wrapper {
+  font-family: 'Trebuchet MS', sans-serif;
+  width: 60%;
+  height: 100vh;
+  padding: 40px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+@media only screen and (max-width: 768px) {
+  .Form-Wrapper {
+    width: 100%;
+  }
+}
+
+.Card-Number-Label {
+  align-self: flex-start;
+  color: rgb(65, 189, 127);
+}
+
+.Card-Number-Label-Filled {
+  color: rgb(150, 156, 153);
+}
+
+.Input-Wrapper {
+  width: 100%;
+  position: relative;
+  margin-bottom: 50px;
+}
+  
+.Icon-Image {
+  width: 30px;
+  position: absolute;
+  top: 13px;
+}
+
+.Card-Number-Input {
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  width: 100%;
+  padding: 10px 40px;
+  margin: 5px 0;
+  font-size: 16px;
+  box-sizing: border-box;
+  border: none;
+  border-bottom: 1.5px solid rgb(65, 189, 127);
+  outline: none;
+}
+
+.Card-Number-Input::placeholder {
+  opacity: .2;
+}
+
+.Card-Number-Input-Filled {
+  border-bottom: 1px solid rgb(150, 156, 153);
+}
+
+@media only screen and (max-width: 480px) {
+  .Card-Number-Input {
+    font-size: 12px;
+   }
+}
+
+.Save-Button {
+  width: 100%;
+  background-color: rgb(150, 145, 145);
+  border-radius: 4px;
+  border: .5px;
+  cursor: not-allowed;
+  opacity: .5;
+}
+
+.Save-Button-Text {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 20px;
+  font-weight: bold;
+  padding: 10px;
+  color: white;
+}
+
+@media only screen and (max-width: 480px) {
+  .Save-Button-Text {
+    font-size: 16px;
+  }
+}
+
+.Save-Button-Enabled {
+  background-color: rgb(65, 189, 127);
+  opacity: 1;
+  cursor: pointer;
+}
+
+.Save-Button-Text-Enabled {
+  opacity: 1;
+}
+
+.Error-Message {
+  color: rgb(189, 65, 65);
+  margin-bottom: 5px;
+}
